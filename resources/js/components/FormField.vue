@@ -1,6 +1,11 @@
 <template>
-    <default-field :field="field" :errors="errors">
-        <template slot="field">
+    <DefaultField
+        :field="field"
+        :errors="errors"
+        :show-help-text="showHelpText"
+        :full-width-content="fullWidthContent"
+    >
+        <template #field>
             <select :id="field.name"
                     class="w-full form-control form-input form-input-bordered"
                     :class="errorClasses"
@@ -9,7 +14,7 @@
                 <option v-for="state of field.states" :value="state.key">{{ state.value }}</option>
             </select>
         </template>
-    </default-field>
+    </DefaultField>
 </template>
 
 <script>

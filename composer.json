@@ -1,7 +1,13 @@
 {
     "name": "dniccum/nova-state-select",
     "description": "A Laravel Nova field that is a select dropdown pre-populated with all of the states within the US.",
-    "keywords": [
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+   "keywords": [
         "laravel",
         "nova",
         "state",
@@ -27,5 +33,8 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require-dev": {
+        "laravel/nova": "^4.33"
+    }
 }

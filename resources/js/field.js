@@ -1,5 +1,9 @@
-Nova.booting((Vue, router, store) => {
-    Vue.component('index-nova-state-select', require('./components/IndexField'))
-    Vue.component('detail-nova-state-select', require('./components/DetailField'))
-    Vue.component('form-nova-state-select', require('./components/FormField'))
+import IndexField from './components/IndexField'
+import DetailField from './components/DetailField'
+import FormField from './components/FormField'
+
+Nova.booting((app, store) => {
+  app.component('index-nova-state-select', IndexField)
+  app.component('detail-nova-state-select', DetailField)
+  app.component('form-nova-state-select', FormField)
 })
