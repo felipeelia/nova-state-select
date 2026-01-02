@@ -28,11 +28,9 @@ class StateSelect extends Field
      * @param null $attribute
      * @return mixed
      */
-    public function resolve($resource, $attribute = null)
+    public function resolve($resource, ?string $attribute = null): void
     {
         $this->setAbbreviations();
-
-        return parent::resolve($resource, $attribute);
     }
 
     /**
