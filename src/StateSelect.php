@@ -30,6 +30,8 @@ class StateSelect extends Field
      */
     public function resolve($resource, ?string $attribute = null): void
     {
+        parent::resolve($resource, $attribute);
+
         $this->setAbbreviations();
     }
 
